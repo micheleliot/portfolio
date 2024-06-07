@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+p a {
+    color: white;
+}
+
+section a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+text {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    -webkit-text-stroke: 1px #fff;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 0;
+    background: white; 
+    opacity: 100%;
+    margin: 0;
+    max-width: 55%;
+    left: 0;
+}
+
+nav li {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    position: relative;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    min-height: max-content;
+    min-width: max-content;
+}
+
+nav li:first-of-type {
+    max-width: 100px;
+}
+
+nav li:hover {
+    background-color: #C7C0BE;
+}
+
+.actuel {
+    background-color: #C7C0BE;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    padding: 10px 16px;
+    color: #555;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.sousmenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.sousmenu > li > a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.sousmenu > li > a:hover {
+    background-color: #111;
+}
+
+nav ul > li:hover .sousmenu {
+    display: block;
+}
+
+.acceuille {
+    padding-top: 55px;
+    color: white;
+    padding: 7.5%;
+    min-height: 100vh;
+}
+
+.acceuille p {
+    font-size: 2em;
+}
+
+.acceuille h1 {
+    font-size: 4.5em;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.projets {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 7.5%;
+}
+
+.projet {
+    border-radius: 100px;
+    background-color: #fff;
+    display: flex;
+    max-width: 250px;
+    max-height: 200px;
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+    padding: 43px 39px 80px;
+}
+
+.projets img {
+    width: 200px;
+    height: 150px;
+    padding-bottom: 20px;
+}
+
+.projets img:last-child {
+    height: 60%;
+}
+
+.projet p {
+    font-family: Inter, sans-serif;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.moi {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+    padding: 7.5%;
+}
+
+.moi section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.moi img {
+    flex-grow: 1;
+    border-radius: 100px;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.moi p {
+    flex-grow: 2;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+.moi section {
+    margin-top: 5vh;
+}
+
+.outil {
+    padding: 7.5%;
+    min-height: 50vh;
+}
+
+.outil ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.outil img {
+    border-radius: 100px;
+    height: 80%;
+    width: 70%;
+    max-width: 300px;
+}
+
+.a_propos {
+    min-height: 50vh;
+    padding: 7.5%;
+}
+
+.a_propos p {
+    font-size: 1.5em;
+}
+
+.resume {
+    min-height: 75vh;
+    padding: 7.5%;
+    display: flex;
+}
+
+.resume p {
+    flex-grow: 2;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+.resume img {
+    flex-grow: 1;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer {
+    height: 12.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    color: black;
+}
+
+.footer-content {
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
