@@ -230,7 +230,7 @@ MOI
 .moi{
   display: flex;
   flex-direction: column;
-  min-height: 75vh;
+  height: 45vh;
   padding:7.5%;
 }
 .moi section{
@@ -302,7 +302,7 @@ page d'un projet
 */
 
 .resume{
-  min-height: 75vh;
+  height: 40vh;
   padding:7.5%;
   display: flex;
 }
@@ -321,12 +321,18 @@ page d'un projet
 }
 
 .role{
-  min-height: 75vh;
+  min-height: 40vh;
   padding:7.5%;
 }
+.role p{
+  font-size: 2em;
+}
 .competence{
-  min-height: 75vh;
+  min-height: 40vh;
   padding:7.5%;
+}
+.competence p{
+  font-size: 2em;
 }
 
 
